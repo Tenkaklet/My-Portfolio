@@ -5,7 +5,7 @@
       "buildCommand": "echo building!"
     },
     "deploy": {
-      "startCommand": "npm run dev",
+      "startCommand": "yarn dev",
       "healthcheckPath": "/",
       "healthcheckTimeout": 100,
       "restartPolicyType": "NEVER"
