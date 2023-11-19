@@ -4,6 +4,6 @@
       "startCommand": "npm run dev",
       "healthcheckPath": "/",
       "healthcheckTimeout": 100,
-      "restartPolicyType": "NEVER"
+      "restartPolicyType": "ALWAYS"
     }
   }
