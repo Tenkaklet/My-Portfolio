@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         src={`https://www.googletagmanager.com/gtag/js?id=G-Y5NCYWGM1N`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="script-loading">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
